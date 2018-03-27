@@ -1,0 +1,120 @@
+[26/03/2018 16:55] ERROR red on_command_error 369: Exception in command 'welcomeset'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\welcome.py", line 34, in welcomeset
+    self.settings[server.id]["CHANNEL"] = server.default_channel.id
+AttributeError: 'NoneType' object has no attribute 'id'
+[26/03/2018 16:58] ERROR red on_command_error 369: Exception in command 'welcomeset bot role'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\welcome.py", line 174, in welcomeset_bot_role
+    "now be put into the {} role".format(role.name))
+AttributeError: 'NoneType' object has no attribute 'name'
+[26/03/2018 17:29] ERROR red on_command_error 369: Exception in command 'pressf'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\pressf.py", line 51, in pressf
+    amount = len(self.messager[channel.id])
+KeyError: '427857761938702337'
+[26/03/2018 17:47] ERROR owner load 74: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it
+Traceback (most recent call last):
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib\discord\ext\commands\bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\leveler.py", line 3284, in setup
+    n = Leveler(bot)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\leveler.py", line 61, in __init__
+    dbs = client.database_names()
+  File "lib\pymongo\mongo_client.py", line 1496, in list_database_names
+    for doc in self.list_databases(session, nameOnly=True)]
+  File "lib\pymongo\mongo_client.py", line 1476, in list_databases
+    "admin").command(cmd, session=session)
+  File "lib\pymongo\database.py", line 529, in command
+    with client._socket_for_reads(read_preference) as (sock_info, slave_ok):
+  File "C:\Users\liam-\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "lib\pymongo\mongo_client.py", line 982, in _socket_for_reads
+    server = topology.select_server(read_preference)
+  File "lib\pymongo\topology.py", line 224, in select_server
+    address))
+  File "lib\pymongo\topology.py", line 183, in select_servers
+    selector, server_timeout, address)
+  File "lib\pymongo\topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it
+[26/03/2018 17:58] ERROR owner load 69: ('invalid syntax', ('C:\\Users\\liam-\\Documents\\Discord Bots\\Red-DiscordBot\\cogs\\account.py', 21, 39, '        server = ctx.messFavourite Team.server\n'))
+Traceback (most recent call last):
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "C:\Users\liam-\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\account.py", line 21
+    server = ctx.messFavourite Team.server
+                                  ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('C:\\Users\\liam-\\Documents\\Discord Bots\\Red-DiscordBot\\cogs\\account.py', 21, 39, '        server = ctx.messFavourite Team.server\n'))
+[26/03/2018 18:00] ERROR owner load 69: ('invalid syntax', ('C:\\Users\\liam-\\Documents\\Discord Bots\\Red-DiscordBot\\cogs\\account.py', 57, 34, '                    Favourite Team = self.nerdie[server.id][user.id]["Favourite Team"]\n'))
+Traceback (most recent call last):
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "C:\Users\liam-\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\account.py", line 57
+    Favourite Team = self.nerdie[server.id][user.id]["Favourite Team"]
+                 ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\owner.py", line 65, in load
+    self._load_cog(module)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('C:\\Users\\liam-\\Documents\\Discord Bots\\Red-DiscordBot\\cogs\\account.py', 57, 34, '                    Favourite Team = self.nerdie[server.id][user.id]["Favourite Team"]\n'))
+[26/03/2018 21:58] ERROR red on_command_error 369: Exception in command 'twentyq play'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\Q20.py", line 229, in play
+    del userz[channel.id]
+TypeError: list indices must be integers or slices, not str
+[27/03/2018 08:46] ERROR red on_command_error 369: Exception in command 'addreact'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\smartreact.py", line 25, in addreact
+    trigger, emoji = parse_command(command)
+  File "C:\Users\liam-\Documents\Discord Bots\Red-DiscordBot\cogs\smartreact.py", line 149, in parse_command
+    emoji = command[-1]
+IndexError: tuple index out of range

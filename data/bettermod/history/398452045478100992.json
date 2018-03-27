@@ -1,0 +1,42 @@
+{
+    "125591998022418433" : {
+        "ban-warn" : 0,
+        "case1" : {
+            "applied" : 1,
+            "deleted" : 0,
+            "level" : "Simple",
+            "reason" : "Test",
+            "timestamp" : "26 Mar 2018 17:15"
+        },
+        "kick-warn" : 0,
+        "simple-warn" : 1,
+        "total-warns" : 1
+    },
+    "187848809924132865" : {
+        "ban-warn" : 0,
+        "case1" : {
+            "applied" : 1,
+            "deleted" : 0,
+            "level" : "Simple",
+            "reason" : "Being a naughty boy",
+            "timestamp" : "26 Mar 2018 17:15"
+        },
+        "kick-warn" : 0,
+        "simple-warn" : 1,
+        "total-warns" : 1
+    },
+    "424963340931170304" : {
+        "ban-warn" : 0,
+        "case1" : {
+            "applied" : 1,
+            "deleted" : 0,
+            "level" : "Simple",
+            "reason" : "Behave init.",
+            "timestamp" : "26 Mar 2018 16:14"
+        },
+        "kick-warn" : 0,
+        "simple-warn" : 1,
+        "total-warns" : 1
+    },
+    "version" : "1.1"
+}
